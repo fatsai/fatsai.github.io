@@ -1,0 +1,136 @@
+######################## default configuration ####################
+baseURL = ""
+relativeURLs= true
+languageCode = "zh-tw"
+defaultContentLanguage = "zh-tw"
+title = "Fatsai|記錄小資女發財之路"
+theme = "liva-hugo"
+summaryLength = "10"
+paginate = 6
+disqusShortname = ""
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+
+############################## navigation ###############################
+[menu]
+
+  # main menu
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 1
+
+  [[menu.main]]
+  name = "Post"
+  URL = "blog"
+  weight = 2
+
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 3
+
+  # footer menu
+  [[menu.footer]]
+  name = "About"
+  URL = "about"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Post"
+  URL = "blog"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Contact"
+  URL = "contact"
+  weight = 3
+
+
+#################### default parameters ################################
+[params]
+logo = "images/banner.jpg"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Fatsai"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# Contact Information
+mobile = ""
+email = "fireyourboss1993@gmail.com"
+location = "Taipei.Taiwan"
+# copyright
+copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # search
+  [params.search]
+  enable = true
+
+  [permalinks]
+  post = "/:year/:month/:filename/"
+
+############################ news letter ########################
+[params.newsletter]
+enable = true
+title = "訂閱電子報"
+content = "請填寫您的e-mail電子郵件地址。"
+
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "https://www.facebook.com/Fatsai-%E7%99%BC%E8%B2%A1-107275041101406/?ref=page_internal"
+
+[[params.social]]
+title = "Youtube"
+icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
+link = "https://www.youtube.com/channel/UC1-Djj02LREl0gzXfIPCYqA"
+
+[[params.social]]
+title = "instagram"
+icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://www.instagram.com/fa.tsai.2021/"
